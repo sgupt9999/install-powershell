@@ -1,4 +1,4 @@
-## This is the file to be used to create powershell lambda function
+## This is the file to be used to create powershell lambda function to query a postgres db instance
 ## Need to enter credentials in defaultCreds
 
 

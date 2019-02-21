@@ -1,4 +1,4 @@
-**Setup a powershell environment to be able to upload lambda functions**
+**Setup a powershell environment to be able to upload lambda functions and create a basic "Hello World" function and one querying a postgres db instance**
 
 **Steps**
 * **Run powershell_lambda_setup.sh**
@@ -24,4 +24,9 @@
     * ./powershell_lambda_create_and_upload.ps1
         * depending on the file selected this will create a "Hello World" or a postgres connecting Lambda function
     * OR ./db_no_lambda.ps1 to connect to postgres directly from powershell
+* **Have tried the following when creating db lambda function**
+    * cp /usr/lib64/libodbc.so.2 /root/.nuget/packages/microsoft.powershell.native/6.1.0/runtimes/linux-x64/native/
+    * chmod 766 /root/.nuget/packages/microsoft.powershell.native/6.1.0/runtimes/linux-x64/native/libodbc.so.2
+    * This eliminated the unixODBC error, but still gives an error on not recognising the driver
+
 
