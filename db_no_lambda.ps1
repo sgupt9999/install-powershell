@@ -1,7 +1,8 @@
 ## Can use this script to test postgres connectivity from Linux Powershell
 ## Need to enter all information in $defaultCreds 
 
-$queryString = "select * from misc.holiday_schedule;"
+#$queryString = "select * from misc.holiday_schedule;"
+$queryString = "select * from test1;"
 $queryString
 $target = "production";
     #$creds.$target.user;

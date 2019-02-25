@@ -4,7 +4,8 @@
 
 
 #Requires -Modules @{ModuleName='AWSPowerShell.NetCore';ModuleVersion='3.3.450.0'}
-$queryString = "select * from misc.holiday_schedule;";
+#$queryString = "select * from misc.holiday_schedule;";
+$queryString = "select * from test1;";
     #$queryString
 
 $target = "production";
